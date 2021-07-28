@@ -12,8 +12,8 @@
 <CultureChooser />
 
 <TelerikGrid Data="@forecasts"
-             Pageable="true" Groupable="true" Sortable="true"
-             OnUpdate="@UpdateHandler" OnDelete="@DeleteHandler" OnCreate="@CreateHandler">
+             PageSize="15" ScrollMode="GridScrollMode.Virtual" RowHeight="46" Height="600px"
+             OnUpdate="@UpdateHandler" OnDelete="@DeleteHandler" OnCreate="@CreateHandler" >
     <GridToolBar>
         <GridCommandButton Command="Add" Icon="add">@Localizer[nameof(TelerikMessages.Grid_Create)]</GridCommandButton>
     </GridToolBar>

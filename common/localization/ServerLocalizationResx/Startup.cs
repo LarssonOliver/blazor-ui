@@ -40,13 +40,12 @@ namespace ServerLocalizationResx
                 // define the list of cultures your app will support
                 var supportedCultures = new List<CultureInfo>()
             {
-                new CultureInfo("en-US"),
-                new CultureInfo("fr-FR"),
-                new CultureInfo("bg-BG")
+                new CultureInfo("en"),
+                new CultureInfo("sv")
             };
 
                 // set the default culture
-                options.DefaultRequestCulture = new RequestCulture("en-US");
+                options.DefaultRequestCulture = new RequestCulture("en");
 
                 options.SupportedCultures = supportedCultures;
                 options.SupportedUICultures = supportedCultures;
